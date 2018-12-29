@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.censoft.login.dao.LogDao">
+<sql id="all">id,name,passworld,cz,shijian</sql>
+  <select id="selectAll" resultType="com.censoft.login.entity.Log">
+    select <include refid="all"></include> from log order by shijian desc
+  </select>
+  <insert id="insertlog" parameterType="com.censoft.login.entity.Log">
+  insert into log values(null,#{name},#{passworld},#{cz},#{shijian})
+  </insert>
+  <delete id="del" parameterType="com.censoft.login.entity.Log">
+  delete from log where id=#{id}
+  </delete>
+</mapper>
