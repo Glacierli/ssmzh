@@ -71,7 +71,7 @@
 				<%-- <a type="hidden" href="view?id=${ sj.id }" data-target="#large"
 									data-toggle="modal"><nobr>${ sj.id }</nobr></a> --%>
 				<td>${ sj.name }</td>
-				<td>${ sj.passworld }</td>
+				<td>${ sj.password }</td>
 				</td>
 				<td><a href="task2/edit.do?id=${ sj.id } ">修改</a>&nbsp;|&nbsp;
 				<a href="task2/del.do?id=${ sj.id } " class="btn-delete"  onclick="del()" data-code="${ sj.id }"><font>删除</font></a></td>
@@ -114,7 +114,7 @@
                         </div>
                         <div class="input-group input-group-md">
                             <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input type="password" class="form-control" id="passworld" name="passworld" placeholder="请输入密码"/>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码"/>
                         </div>
                         <br/>
                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭

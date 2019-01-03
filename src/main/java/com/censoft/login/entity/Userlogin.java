@@ -4,18 +4,18 @@ public class Userlogin implements Serializable {
 
 	private int id;
 	private String name;
-	private String passworld;
+	private String password;
 
 	
 	public Userlogin() {
 		super();
 	}
 
-	public Userlogin(int id, String name, String passworld) {
+	public Userlogin(int id, String name, String password) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.passworld = passworld;
+		this.password = password;
 	}
 
 	public int getId() {
@@ -34,17 +34,17 @@ public class Userlogin implements Serializable {
 		this.name = name;
 	}
 
-	public String getPassworld() {
-		return passworld;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setPassworld(String passworld) {
-		this.passworld = passworld;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	@Override
 	public String toString() {
-		return "Userlogin [id=" + id + ", name=" + name + ", passworld=" + passworld + "]";
+		return "Userlogin [id=" + id + ", name=" + name + ", password=" + password + "]";
 	}
 
 }

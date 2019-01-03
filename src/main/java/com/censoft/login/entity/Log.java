@@ -9,7 +9,7 @@ import java.util.Date;
 public class Log implements Serializable{
 private int id;
 private String name;
-private String passworld;
+private String password;
 private String shijian;
 private int cz;
 
@@ -17,11 +17,11 @@ private int cz;
 public Log() {
 	super();
 }
-public Log(int id, String name, String passworld, int cz, String shijian) {
+public Log(int id, String name, String password, int cz, String shijian) {
 	super();
 	this.id = id;
 	this.name = name;
-	this.passworld = passworld;
+	this.password = password;
 	this.shijian = shijian;
 	this.cz = cz;
 }
@@ -29,7 +29,7 @@ public Log(int id, String name, String passworld, int cz, String shijian) {
 
 @Override
 public String toString() {
-	return "Log [id=" + id + ", name=" + name + ", passworld=" + passworld + ", shijian=" + shijian + ", cz=" + cz
+	return "Log [id=" + id + ", name=" + name + ", password=" + password + ", shijian=" + shijian + ", cz=" + cz
 			+ "]";
 }
 public int getId() {
@@ -44,11 +44,11 @@ public String getName() {
 public void setName(String name) {
 	this.name = name;
 }
-public String getPassworld() {
-	return passworld;
+public String getPassword() {
+	return password;
 }
-public void setPassworld(String passworld) {
-	this.passworld = passworld;
+public void setPassword(String password) {
+	this.password = password;
 }
 
 public int getCz() {

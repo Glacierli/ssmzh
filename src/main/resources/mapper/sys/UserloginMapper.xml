@@ -7,13 +7,13 @@
     select * from user order by id desc
   </select>
   <insert id="insertuser" parameterType="com.censoft.login.entity.Userlogin">
-  insert into user values(null,#{name},#{passworld})
+  insert into user values(null,#{name},#{password})
   </insert>
   <select id="finbyid" parameterType="com.censoft.login.entity.Userlogin" resultType="com.censoft.login.entity.Userlogin">
   select *from user where id=#{id}
   </select>
   <update id="update" parameterType="com.censoft.login.entity.Userlogin">
-  update user set name=#{name}, passworld=#{passworld} where id=#{id} 
+  update user set name=#{name}, password=#{password} where id=#{id} 
   </update>
   <delete id="del" parameterType="com.censoft.login.entity.Userlogin">
   delete from user where id=#{id}

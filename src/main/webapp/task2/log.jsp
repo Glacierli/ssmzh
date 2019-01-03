@@ -72,7 +72,7 @@
 				<%-- <a type="hidden" href="view?id=${ sj.id }" data-target="#large"
 									data-toggle="modal"><nobr>${ sj.id }</nobr></a> --%>
 				<td>${ sj.name }</td>
-				<td>${ sj.passworld }</td>
+				<td>${ sj.password }</td>
 				
 				<td>${ sj.shijian }</td>
 				<c:if test="${'0' eq sj.cz }">
@@ -91,6 +91,7 @@
 			</tr>
 		</c:forEach>
 	</table>
+	<a href="task2/createExcel.do" class="btn btn-default btn-lg" role="button">导出日志</a>
 <script type="text/javascript">
 </script>
 
@@ -126,7 +127,7 @@
                         </div>
                         <div class="input-group input-group-md">
                             <span class="input-group-addon" id="sizing-addon1"><i class="glyphicon glyphicon-lock"></i></span>
-                            <input type="password" class="form-control" id="passworld" name="passworld" placeholder="请输入密码"/>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码"/>
                         </div>
                         <br/>
                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭

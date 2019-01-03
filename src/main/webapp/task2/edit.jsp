@@ -49,7 +49,7 @@
 <body>
 	<%
 		String name = uu.getName();
-		String pwd = uu.getPassworld();
+		String pwd = uu.getPassword();
 		int id=uu.getId();
 	%>
 	<div class="container">
@@ -67,7 +67,7 @@
 					<div class="input-group input-group-md">
 						<span class="input-group-addon" id="sizing-addon1"><i
 							class="glyphicon glyphicon-lock"></i></span> <input type="password"
-							class="form-control" id="pwd" name="passworld" value="<%=pwd%>"
+							class="form-control" id="pwd" name="password" value="<%=pwd%>"
 							placeholder="请输入密码" />
 					</div>
 					<br />
